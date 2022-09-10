@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* MOBILE FIRST */
+
+:root{
+    --color1: #5e2c83;
+    --color2: #489c9c;
+    --color3: ;
+    --color4: ;
+
+    --font1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--font1);
+}
+
+body, html{
+    height: 100%;
+
+    background-color: var(--color1);
+}
+
+main{
+    background-color: white;
+    background-image: url(../imagem/porta-pq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+    width: 260px;
+    height: 520px;
+
+    border-radius: 25px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main > div{
+    background-color: white;
+
+    border-radius: 25px 25px 0 0;
+
+    padding: 6px;
+}
+
+main h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.7em;
+}
+
+main p{
+    font-weight: lighter;
+    font-size: 0.8em;
+}
+
+main div form div{
+    margin: 5px 0 0 0;
+    padding: 6px;
+
+    background-color: var(--color1);
+
+    border-radius: 5px;
+}
+
