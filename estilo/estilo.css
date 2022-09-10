@@ -5,7 +5,7 @@
 :root{
     --color1: #5e2c83;
     --color2: #489c9c;
-    --color3: ;
+    --color3: #6a4284;
     --color4: ;
 
     --font1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,25 +16,21 @@
     padding: 0;
 
     font-family: var(--font1);
+
+    box-sizing: border-box;
 }
 
 body, html{
     height: 100%;
 
-    background-color: var(--color1);
+    background-image: linear-gradient(to bottom, var(--color1), var(--color2));
 }
 
 main{
-    background-color: white;
-    background-image: url(../imagem/porta-pq.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-
-    width: 260px;
+    width: 250px;
     height: 520px;
 
-    border-radius: 25px;
+    border-radius: 20px;
 
     position: absolute;
     top: 50%;
@@ -42,12 +38,26 @@ main{
     transform: translate(-50%, -50%);
 }
 
-main > div{
+main > div#image{
+    border-radius: 20px 20px 0 0;
+
+    height: 200px;
+
+    background-color: white;
+    background-image: url(../imagem/porta-md.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+main > div#form{
+    height: 320px;
+
     background-color: white;
 
-    border-radius: 25px 25px 0 0;
+    border-radius: 0 0 20px 20px ;
 
-    padding: 6px;
+    padding: 0 10px 10px 10px;
 }
 
 main h1{
@@ -57,16 +67,90 @@ main h1{
 }
 
 main p{
+    margin-top: 5px;
+
     font-weight: lighter;
     font-size: 0.8em;
 }
 
-main div form div{
-    margin: 5px 0 0 0;
-    padding: 6px;
 
-    background-color: var(--color1);
+main div form div{
+    margin-top: 5px;
+
+    display: block;
+
+    background-color: var(--color3);
 
     border-radius: 5px;
 }
 
+main div form div span.material-icons{
+    color: white;
+
+    font-size: 2em;
+
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+main div form div > input{
+    background-color: #ddffff;
+
+    display: inline-block;
+
+    padding: 8px;
+
+    border-radius: 5px;
+
+    width: calc(100% - 60px);
+
+    transform: translate(0, -5px);
+}
+
+
+main div form > input{
+    width: 100%;
+
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+
+    display: block;
+
+    background-color: var(--color2);
+
+    border-radius: 5px;
+    border: none;
+
+    margin-top: 5px;
+    padding: 10px;
+}
+
+main div form > a{
+    width: 100%;
+
+    text-align: center;
+    color: var(--color2);
+    font-size: 1.1em;
+    text-decoration: none;
+
+    display: block;
+
+    background-color: white;
+
+    border-radius: 5px;
+    outline: 1px solid var(--color2);
+
+    margin-top: 5px;
+    padding: 10px 0;
+}
+
+ main div form > a:hover{
+    background-color: #c9ffff;
+}
+
+main div form > input:hover{
+    cursor: pointer;
+
+    background-color: #59b9b9;
+}
