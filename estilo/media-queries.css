@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+:root{
+    --color1: #5e2c83;
+    --color2: #489c9c;
+    --color3: #6a4284;
+
+    --font1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* TABLET (700PX - 990PX) */
+@media screen and (min-width:700px) and (max-width:990px) {   
+    main{
+        transition: 0.5s;
+
+        width: 80%;
+        height: 300px;
+    }
+
+    main > div{
+        display: inline-block;
+    }
+
+    main div#image{
+        border-radius: 20px 0 0 20px;
+
+        float: left;
+
+        height: 100%;
+        width: 30%;
+    }
+
+    main div#form{
+        float: right;
+
+        width: 70%;
+        height: 100%;
+
+        border-radius: 0 20px 20px 0;
+    }
+
+    main div h1{
+        margin-top: 8px;
+    }
+}
+
+
+
+/* DESKTOP (990PX - 1200PX) */
+@media screen and (min-width:990px) and (max-width:1200px) {   
+    main{
+        transition: 0.5s;
+
+        width: 900px;
+        height: 300px;
+    }
+
+    main > div{
+        display: inline-block;
+    }
+
+    main div#image{
+        border-radius: 20px 0 0 20px;
+
+        float: left;
+
+        height: 100%;
+        width: 30%;
+    }
+
+    main div#form{
+        float: right;
+
+        width: 70%;
+        height: 100%;
+
+        border-radius: 0 20px 20px 0;
+    }
+
+    main div h1{
+        margin-top: 8px;
+    }
+
+    main div form > div, main div form > a, main div form > input{
+        margin-top: 10px;
+    }
+}
+
+
+/* TELAS GRANDES (1200PX - ...) */
+@media screen and (min-width:1200px) {   
+    main{
+        transition: 0.5s;
+
+        width: 900px;
+        height: 350px;
+    }
+
+    main > div{
+        display: inline-block;
+    }
+
+    main div#image{
+        border-radius: 0 20px 20px 0 ;
+
+        float: right;
+
+        height: 100%;
+        width: 30%;
+    }
+
+    main div#form{
+        float: left;
+
+        width: 70%;
+        height: 100%;
+
+        border-radius: 20px 0 0 20px;
+    }
+
+    main div h1{
+        margin-top: 15px;
+
+        font-size: 2em;
+    }
+
+    main div p{
+        font-size: 1em;
+    }
+    
+    main div form > div, main div form > a, main div form > input{
+        margin-top: 10px;
+    }
+}

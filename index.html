@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="stylesheet" href="estilo/media-queries.css">
     <link rel="shortcut icon" href="imagem/favicon (2).ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <title>Login</title>
@@ -21,11 +22,11 @@
             <form action="login.py" method="post" autocomplete="on">
                 <div>
                     <label for="iemail"><span class="material-icons">person</span></label>
-                    <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Seu e-mail" required maxlength="40">
+                    <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Seu e-mail" required maxlength="60">
                 </div>
                 <div>
                     <label for="ipassword"><span class="material-icons">vpn_key</span></label>
-                    <input type="password" name="password" id="ipassword" autocomplete="current-password" placeholder="Sua senha" required>
+                    <input type="password" name="password" id="ipassword" autocomplete="current-password" placeholder="Sua senha" required minlength="6">
                 </div>
                 
                 <input type="submit" value="Entrar">
