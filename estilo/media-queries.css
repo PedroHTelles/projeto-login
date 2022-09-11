@@ -65,13 +65,13 @@
         float: left;
 
         height: 100%;
-        width: 30%;
+        width: 40%;
     }
 
     main div#form{
         float: right;
 
-        width: 70%;
+        width: 60%;
         height: 100%;
 
         border-radius: 0 20px 20px 0;
@@ -82,7 +82,7 @@
     }
 
     main div form > div, main div form > a, main div form > input{
-        margin-top: 10px;
+        margin-top: px;
     }
 }
 
@@ -106,13 +106,13 @@
         float: right;
 
         height: 100%;
-        width: 30%;
+        width: 45%;
     }
 
     main div#form{
         float: left;
 
-        width: 70%;
+        width: 55%;
         height: 100%;
 
         border-radius: 20px 0 0 20px;
